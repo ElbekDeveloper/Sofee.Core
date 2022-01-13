@@ -38,6 +38,7 @@ namespace Sofee.Core.Api.Tests.Unit.Services.Foundations
                        Times.Never);
 
             this.storageBrokerMock.VerifyNoOtherCalls();
+            this.loggingBrokerMock.VerifyNoOtherCalls();
         }
     }
 }
