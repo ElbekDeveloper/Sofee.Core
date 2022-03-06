@@ -10,6 +10,6 @@ namespace Sofee.Core.Api.Brokers.Storages
 {
     public partial interface IStorageBroker
     {
-        ValueTask<Language> AddLanguageAsync(Language language);
+        ValueTask<Language> InsertLanguageAsync(Language language);
     }
 }

@@ -14,7 +14,7 @@ namespace Sofee.Core.Api.Brokers.Storages
     {
         public DbSet<Language> Languages { get; set; }
 
-        public async ValueTask<Language> AddLanguageAsync(Language language)
+        public async ValueTask<Language> InsertLanguageAsync(Language language)
         {
             using var broker = new StorageBroker(this.configuration);
 
